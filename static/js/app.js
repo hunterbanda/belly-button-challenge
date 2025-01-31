@@ -21,7 +21,7 @@ function buildMetadata(sample) {
       //panel.append("h6").text(`${key}: ${value}`);
  // });
     for (key in result){
-      panel.append("h6").text('${key.toUpperCase()}: ${result[key]}');
+      panel.append("h6").text(`${key.toUpperCase()}: ${result[key]}`);
     };
   });
 }
@@ -110,7 +110,7 @@ function init() {
     //});
     for (let i = 0; i < sampleNames.length; i++){
       dropdown
-        .append("options")
+        .append("option")
         .text(sampleNames[i])
         .property("value", sampleNames[i]);
     };
